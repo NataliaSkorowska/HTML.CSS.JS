@@ -1,2 +1,2 @@
-# JavaScript---password-checking
-Short form for password checking
+Password Strength Meter
+A website for verifying strength of a password. 
