@@ -1,8 +1,12 @@
-Password Strength Meter
+Examples of usage HTML,CSS and JS.
 
-A website for verifying strength of a password.
+Exercices for Univeristy classes:
+
+- Validity of personal data
+- A website for verifying strength of a password:
 
 ![Wersja demonstracyjna](/zdjecie.png)
+
 
 
 
