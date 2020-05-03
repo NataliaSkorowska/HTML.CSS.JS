@@ -1,0 +1,51 @@
+#baner 
+{
+    background-color: #08826A;
+    height: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#panelLewy
+{
+background-color: #1E9880;
+height: 550px;
+width: 30%;
+float: left;
+}
+#panelPrawy
+{
+background-color: #9AC8BF;
+text-align: center;
+height: 550px;
+width: 70%;
+float: right;
+}
+#stopka
+{
+background-color: #08826A;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: right;
+color: white;
+}
+a{
+    color: white;
+}
+table{
+    margin: 20 px;
+    border: 1px solid;
+    width: 80%;
+}
+tr:hover{
+    background-color: grey;
+    color: white;
+}
+th
+{
+background-color: #1E9880;
+border:1px solid;
+}
+td
+{
+    border: 1 px solid;
+    text-align: right;
+}
