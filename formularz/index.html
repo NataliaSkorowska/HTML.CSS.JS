@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <script language = "JavaScript">
+        function sprawdzDane(form)
+        {
+            var imieNazwisko= document.forms['formularz']['imieNazwisko'].value;
+            const reg = /^[A-ZĄĆĘŁŃÓŹŻ]{1}[a-ząćęłńóżź]+\s[A-ZĄĆĘŁŃÓŹŻ]{1}[a-ząćęłńóżź]+/
+            if (form.imieNazwisko.value === "")
+            {
+                alert ("Wypełnij pole!");
+            }
+            if(!reg.test(imieNazwisko))
+            
+                alert("Upewnij się, że wpisałeś poprawne dane!");
+            else
+                alert("Brawo! Wpisałeś dobre dane!"); 
+        }
+        function sprawdzEmail(form)
+        { 
+            if (form.email.value==="")
+            {
+                alert ("Wypełnij pole z adresem email!")
+            }
+            if(form.email.value.indexOf('@',0)==-1)
+            alert("Upewnij się, że podałeś prawidłowy adres!");
+            else
+            alert("Brawo! Podałeś prawidłowy adres !");
+        }
+    </script>
+</head>
+<body>
+    <h1> Zapraszam do wypełnienia formularza </h1>
+    <form name = "formularz" method = "post">
+        <label for = "imieNazwisko">Podaj swoje imię i nazwisko:</label><br>
+        <input type = "text" name = "imieNazwisko" id="imieNazwisko" placeholder="Imię i nazwisko"></input><br>
+        <input type = "button" name = "dane" value ="sprawdź" onclick = "sprawdzDane(this.form)"></input><br>
+        <br>
+        <label for = "email">Podaj swój adres email:</label><br>
+        <input type = "email" id = "email" placeholder="Twój adres email"></input><br>
+        <input type = "button" name = "poczta" value= "sprawdź" onclick="sprawdzEmail(this.form)">
+    </form>
+</body>
+</html>
