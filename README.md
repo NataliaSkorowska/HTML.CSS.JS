@@ -5,7 +5,7 @@ Exercices for Univeristy classes:
 - Validity of personal data
 - A website for verifying strength of a password:
 
-![Wersja demonstracyjna](/zdjecie.png)
+
 
 
 
